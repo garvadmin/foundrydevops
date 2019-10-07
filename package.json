@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "cibuild": "ng test --code-coverage && ng build --prod --no-progress",
+    "cibuild": "ng build --prod --no-progress",
     "genreporte": "html-pdf coverage/my-test/index.html index.pdf"
   },
   "private": true,
