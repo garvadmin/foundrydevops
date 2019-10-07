@@ -1,0 +1,39 @@
+<!-- <ejs-chart></ejs-chart> -->
+<div class="row">
+  <div class="static-container">
+  <ejs-chart id="chart-container" class="chart-modal" [primaryXAxis]="primaryXAxis" [legendSettings]="legendSettings" [tooltip]="tooltip">
+    <e-series-collection>
+    <e-series [dataSource]="chartData" type="Column" xName="year" yName="gold" name="Gold">
+    </e-series> 
+    </e-series-collection>
+  </ejs-chart>
+  </div>
+  <div class="static-container_secondary">
+  <ejs-chart id="chart-container2" class="chart-modal" [primaryXAxis]="primaryXAxis" [legendSettings]="legendSettings" [tooltip]="tooltip">
+    <e-series-collection>
+    <e-series [dataSource]="chartData2" type="Column" xName="year" yName="gold" name="Gold">
+    </e-series> 
+    </e-series-collection>
+  </ejs-chart>
+  </div>
+</div>
+
+<div class="row">
+  <div class="static-container">
+  <ejs-chart id="chart-container3" class="chart-modal" [primaryXAxis]='primary1XAxis' [primaryYAxis]='primary1YAxis' [title]='title'>
+    <e-series-collection>
+        <e-series [dataSource]='chartData3' type='Area' xName='x' yName='y' name='Product A' fill='green' opacity=0.6></e-series>
+    </e-series-collection>
+  </ejs-chart>
+  </div>
+  <div class="static-container_secondary">
+  <ejs-chart id="chart-container4" class="chart-modal" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title2'>
+    <e-series-collection>
+        <e-series [dataSource]='chartData4' type='StackingBar' xName='x' yName='y' name='John' stackingGroup='JohnandAndrew'></e-series>
+        <e-series [dataSource]='chartData4' type='StackingBar' xName='x' yName='y1' name='Andrew' stackingGroup='JohnandAndrew'></e-series>
+        <e-series [dataSource]='chartData4' type='StackingBar' xName='x' yName='y2' name='Thomas' stackingGroup='ThomasandMichael'></e-series>
+        <e-series [dataSource]='chartData4' type='StackingBar' xName='x' yName='y3' name='Michael' stackingGroup='ThomasandMichael'></e-series>
+    </e-series-collection>
+  </ejs-chart>
+  </div>
+</div>

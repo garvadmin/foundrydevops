@@ -1,0 +1,14 @@
+.chart-modal {
+    width: 100%;
+    display: flex;
+}
+
+.static-container {
+    width: 45%;
+    display: flex;
+    margin: 0;
+
+    &_secondary {
+        margin-left: 24px;
+    }
+}
