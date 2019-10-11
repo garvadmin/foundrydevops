@@ -1,3 +1,44 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>Welcome to my-app!</h1>
+<style>
+    .image-icon {
+        width: 30%;
+        margin: 10px;
+        font-size: 15px;
+        padding: 10px 10px;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        background-color: #ccc9c8;
+    }
+</style>
+<h1 style="text-align: center;">Welcome Angular App!</h1>
+<div style="flex-wrap: wrap;display: flex;">
+    <div class="image-icon flex-container">
+        <a href="#">
+            <img id="3" width="100%" src="../assets/images/banner.jpeg">
+        </a>
+        <div>
+            <div style="word-wrap: break-word;">Sample Image 1</div>
+        </div>
+    </div>
+    <div class="image-icon flex-container">
+        <a href="#">
+            <img id="3" width="100%" src="../assets/images/banner.jpeg">
+        </a>
+        <div>
+            <div style="word-wrap: break-word;">Sample Image 2</div>
+        </div>
+    </div>
+    <div class="image-icon flex-container">
+        <a href="#">
+            <img id="3" width="100%" src="../assets/images/banner.jpeg">
+        </a>
+        <div>
+            <div style="word-wrap: break-word;">Sample Image 3</div>
+        </div>
+    </div>
+</div>
 <router-outlet></router-outlet>
