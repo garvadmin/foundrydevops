@@ -1,0 +1,32 @@
+.wrapper {
+    background: rgba(white, 0.45);
+    transition: background-color 2s ease-out;
+    width: 50%;
+    margin: auto;
+
+    &_back {
+        align-content: center;
+        padding-bottom: 16px;
+    }
+
+    &_logo {
+        margin-top: 15rem;
+        padding-top: 16px;
+        text-align: center;
+
+        &-image {
+            width: 55%;
+            height: 55%;
+        }
+    }
+
+    &:hover {
+        background-color: rgba(peachpuff, 0.65);
+    }
+}
+
+.home_text {
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
