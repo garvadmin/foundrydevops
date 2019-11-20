@@ -1,12 +1,14 @@
 .wrapper {
     background: rgba(white, 0.45);
     transition: background-color 2s ease-out;
-    width: 50%;
+    // width: 50%;
     margin: auto;
 
     &_back {
         align-content: center;
         padding-bottom: 16px;
+        float: right;
+        margin-right: 20%;
     }
 
     &_logo {
@@ -25,8 +27,23 @@
     }
 }
 
-.home_text {
+.home-subHead-text {
+    margin-top: 174px;
+    width: 100%;
+}
+
+.home-hide-subhead {
+    display: none;
+}
+
+.home-text {
     text-align: center;
     vertical-align: middle;
-    color: black;
+    color: white;
+    // width: 150px;
+    // height: 80px;
+    margin-top: 70px;
+    -ms-transform: rotate(6deg); /* IE 9 */
+    -webkit-transform: rotate(6deg); /* Safari 3-8 */
+    transform: rotate(12deg);
 }
